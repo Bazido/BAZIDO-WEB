@@ -1,5 +1,6 @@
+/* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #f4f4f9;
     margin: 0;
     padding: 0;
@@ -7,15 +8,22 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #1E3A8A; /* Dark blue */
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
+    border-bottom: 4px solid #4CAF50; /* Green bottom border */
 }
 
 h1 {
+    font-size: 3em;
     margin: 0;
-    font-size: 2.5em;
+    font-family: 'SciFi', sans-serif; /* Sci-Fi Font */
+}
+
+p {
+    font-size: 1.5em;
+    font-family: 'SciFi', sans-serif;
 }
 
 section {
@@ -23,11 +31,13 @@ section {
     margin: 20px;
     background-color: white;
     border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-size: 2em;
     margin-bottom: 15px;
+    font-family: 'SciFi', sans-serif;
 }
 
 ul {
@@ -38,6 +48,7 @@ ul {
 ul li {
     font-size: 1.2em;
     margin: 10px 0;
+    font-family: 'Arial', sans-serif;
 }
 
 footer {
@@ -49,3 +60,11 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+/* Sci-Fi Font Styling */
+@font-face {
+    font-family: 'SciFi';
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+}
+
+

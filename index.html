@@ -1,30 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAZIDO WEB</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAZIDO_WEB</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to BAZIDO WEB</h1>
-        <p>Your Ultimate Trading Assistant</p>
-    </header>
-    
-    <section>
-        <h2>Features</h2>
-        <ul>
-            <li>Market Analysis</li>
-            <li>Smart Money Concepts</li>
-            <li>Risk/Reward Analysis</li>
-            <li>Auto Trading Capabilities</li>
-        </ul>
-    </section>
+  <header>
+    <h1>BAZIDO_WEB</h1>
+    <p>Your Ultimate Trading Assistant</p>
+  </header>
 
-    <footer>
-        <p>&copy; 2025 BAZIDO. All rights reserved.</p>
-    </footer>
+  <section class="upload">
+    <h2>Upload Your Screenshot</h2>
+    <input type="file" id="file-upload" />
+    <button id="upload-btn">Upload</button>
+  </section>
+
+  <section class="strategies">
+    <h2>Select Trading Strategy</h2>
+    <button id="scalper">Scalper</button>
+    <button id="day-trader">Day Trader</button>
+    <button id="swing-trader">Swing Trader</button>
+  </section>
+
+  <section class="balance">
+    <h2>Enter Your Balance</h2>
+    <input type="number" id="balance" placeholder="Enter your balance" />
+    <button id="calculate">Calculate Trade Details</button>
+  </section>
+
+  <section class="results">
+    <h2>Results</h2>
+    <div id="trade-details">
+      <!-- This section will display the trade details (e.g., lot size, TP, SL) -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BAZIDO_WEB. All rights reserved.</p>
+  </footer>
 </body>
 </html>
 
